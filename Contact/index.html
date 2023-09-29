@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carnet d'adresses</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://kit.fontawesome.com/4d5e2c237d.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <h1>Mon carnet d'adresses</h1>
+    <div id="contacts">
+        <h2>Mes contacts</h2>
+    </div>
+
+    <div id="changes">
+        <i class="fa-solid fa-circle-plus" id="add-contact"></i>
+        <i class="fa-solid fa-trash" id="delete-all"></i>
+    </div>
+
+    <div id="edit">
+        <h2>Editer un contact</h2>
+        <form action="" id="edit-form">
+            <input type="hidden" id="id">
+            <label for="choix">Civilité</label>
+            <select name="choix" id="choix">
+                <option value="Homme">Homme</option>
+                <option value="Femme">Femme</option>
+            </select>
+            <input type="text" id="name" placeholder="Nom">
+            <input type="text" id="firstname" placeholder="Prénom">
+            <input type="text" id="phone" placeholder="Téléphone">
+            <input type="submit" value="Enregistrer">
+            <button type="button" id="close-edit-form">Fermer la fenêtre d'édition</button>
+        </form>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
